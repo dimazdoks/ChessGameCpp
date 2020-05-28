@@ -22,17 +22,26 @@ void Tests::checkT1(Board newBoard) {
 	newBoard.restartBoard(t1);
 	reload(newBoard);
 
-	std::cout << "test #1" << std::endl;
+	std::cout << "test #0" << std::endl;
+	std::cout << "MOVE GG AA" << std::endl;
+	newBoard.movePiece("GG", "AA");
+
+	reload(newBoard);
+
+	std::cout << "test #0" << std::endl;
 	std::cout << "MOVE A4 A6" << std::endl;
 	newBoard.movePiece("A4", "A6");
 
 	reload(newBoard);
 
-	std::cout << "test #1" << std::endl;
+	std::cout << "test #0" << std::endl;
 	std::cout << "MOVE A2 A4" << std::endl;
 	newBoard.movePiece("A2", "A4");
 
 	reload(newBoard);
+	
+	std::cout << "Next test. ";
+	system("pause");
 
 	newBoard.restartBoard(t2);
 	reload(newBoard);
@@ -104,6 +113,8 @@ void Tests::checkT1(Board newBoard) {
 	newBoard.movePiece("G4", "G3");
 
 	reload(newBoard);
+	std::cout << "Next test. ";
+	system("pause");
 }
 void Tests::checkT2(Board newBoard) {
 	newBoard.restartBoard(t3);
@@ -283,6 +294,9 @@ void Tests::checkT2(Board newBoard) {
 
 	system("pause");
 	reload(newBoard);
+	
+	std::cout << "Next test. ";
+	system("pause");
 }
 void Tests::checkT3(Board newBoard) {
 	//CHECKMATE
@@ -336,8 +350,10 @@ void Tests::checkT3(Board newBoard) {
 	std::cout << "MOVE H4 F2" << std::endl;
 	newBoard.movePiece("H4", "F2");
 
-	system("pause");
+	//system("pause");
 	reload(newBoard);
+	std::cout << "Next test. ";
+	system("pause");
 }
 void Tests::checkT4(Board newBoard) {
 	//STALEMATE

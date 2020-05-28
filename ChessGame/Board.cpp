@@ -439,6 +439,7 @@ void Board::movePiece(const std::string& str_from, const std::string& str_to) {
 
 	if (str_from.length() != 2 && str_to.length() != 2) {
 		std::cout << "You should write command like \"Move A2 A4\"!" << std::endl;
+		system("pause");
 		return;
 	}
 
@@ -559,6 +560,10 @@ void Board::game() {
 			std::cin >> from >> to;
 
 			this->movePiece(from, to);
+		}
+		else {
+			std::cout << "Incorrect command! ";
+			system("pause");
 		}
 	}
 }
